@@ -57,6 +57,7 @@ $gray-600: #60697b !default;
 $gray-700: #2f353a !default;
 $gray-800: #21262c !default;
 $gray-900: #1e2228 !default;
+$blue-bca : #1473E6 !default;
 $error: #de4747 !default;
 $light: $gray-100 !default;
 $gray: $gray-200 !default;
@@ -82,14 +83,14 @@ $colors: ("blue": $blue,
   "leaf": $leaf,
   "aqua": $aqua,
   "navy": $navy,
-  "ash": $ash,
+  "ash": $ash, 
   "white": $white,
   "light": $light,
   "gray": $gray,
   "dark": $dark,
   "primary": $primary,
 ) !default;
-$secondary: $gray-400 !default;
+$secondary: $blue-bca !default;
 $success: $green !default;
 $info: $aqua !default;
 $warning: $yellow !default;
