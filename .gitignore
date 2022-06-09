@@ -3,6 +3,8 @@
 # NPM packages folder.
 node_modules/
 
+# Serve folder.
+dist/
 
 # Nova
 .nova/

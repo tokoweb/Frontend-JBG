@@ -43,9 +43,12 @@ select {
     z-index: 1;
   }
 }
+.password-field {
+  position: relative;
+}
 .password-toggle {
   position: absolute;
-  top: 50%;
+  top: 70%;
   transform: translateY(-50%);
   right: 0.75rem;
   cursor: pointer;

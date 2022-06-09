@@ -11,73 +11,247 @@ Navbar Hover & Active
     margin-right: 2rem;
     }
 }
-//navbar dark
-.navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav .show>.nav-link {
+
+@media (min-width: 992px) {
+    //navbar dark
+    .navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav .show>.nav-link {
+        position: relative;
+    }
+
+    .navbar-dark .navbar-nav .nav-link:before, .navbar-dark .navbar-nav .show>.nav-link:before {
+        content: "";
+        position: absolute;
+        background-color: #ffffff;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: 20px;
+        transition: 0.3s;
+    }
+
+    .navbar-dark .navbar-nav .nav-link:hover::before, .navbar-dark .navbar-nav .show>.nav-link:hover::before {
+        width: 100%;
+    }
+
+    .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
+        color: #ffffff
+    }
+
+    .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+        color: #ffffff;
+    }
+
+    .navbar-dark .navbar-nav .nav-link.active::before, .navbar-dark .navbar-nav .show>.nav-link::before {
+        content: "";
+        position: absolute;
+        background-color: #ffffff;
+        height: 3px;
+        width: 100%;
+        left: 0;
+        bottom: 20px;
+        transition: 0.3s;
+    }
+
+    //navbar light
+
+    .navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .show>.nav-link {
+        position: relative;
+    }
+
+    .navbar-light .navbar-nav .nav-link:before, .navbar-light .navbar-nav .show>.nav-link:before {
+        content: "";
+        position: absolute;
+        background-color: #055CAB;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: 20px;
+        transition: 0.3s;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover::before, .navbar-light .navbar-nav .show>.nav-link:hover::before {
+        width: 100%;
+    }
+
+    .navbar-light .navbar-nav .nav-link.active::before, .navbar-light .navbar-nav .show>.nav-link::before {
+        content: "";
+        position: absolute;
+        background-color: #055CAB;
+        height: 3px;
+        width: 100%;
+        left: 0;
+        bottom: 20px;
+        transition: 0.3s;
+    }
+}
+
+/*========================================================
+        MULTI STEP
+=========================================================*/
+
+#msform {
+    position: relative;
+    margin-top: 20px;
+}
+
+#msform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+
+    /*stacking fieldsets above each other*/
     position: relative;
 }
 
-.navbar-dark .navbar-nav .nav-link:before, .navbar-dark .navbar-nav .show>.nav-link:before {
-    content: "";
-    position: absolute;
-    background-color: #ffffff;
-    height: 3px;
-    width: 0;
-    left: 0;
-    bottom: 20px;
-    transition: 0.3s;
+.form-card {
+  text-align: left;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover::before, .navbar-dark .navbar-nav .show>.nav-link:hover::before {
-    width: 100%;
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+    display: none;
 }
 
-.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
-    color: #ffffff
+/*Next Buttons*/
+#msform .action-button {
+    cursor: pointer;
+    float: right;
 }
 
-.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+/*Previous Buttons*/
+#msform .action-button-previous {
+    cursor: pointer;
+    float: left;
+}
+
+#msform .action-button-previous:hover, #msform .action-button-previous:focus {
+    background-color: #000000;
+}
+
+/*The background card*/
+.card {
+    z-index: 0;
+    border: none;
+    position: relative;
+}
+
+/*Step Count*/
+.steps {
+  font-size: 25px;
+    color: gray;
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-align: right;
+}
+
+/*Icon progressbar*/
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: lightgrey;
+}
+
+#progressbar .active {
+    color: #0A109A;
+}
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 15px;
+    width: 25%;
+    float: left;
+    position: relative;
+    font-weight: 400;
+}
+
+/*Icons in the ProgressBar*/
+#progressbar #data-1:before {
+    font-family: FontAwesome;
+    content: "1";
+}
+
+#progressbar #data-2:before {
+    font-family: FontAwesome;
+    content: "2";
+}
+
+#progressbar #data-3:before {
+    font-family: FontAwesome;
+    content: "3";
+}
+
+#progressbar #data-4:before {
+    font-family: FontAwesome;
+    content: "4";
+}
+
+/*Icon ProgressBar before any progress*/
+#progressbar li:before {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    display: block;
+    font-size: 20px;
     color: #ffffff;
+    background: lightgray;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px;
 }
 
-.navbar-dark .navbar-nav .nav-link.active::before, .navbar-dark .navbar-nav .show>.nav-link::before {
-    content: "";
-    position: absolute;
-    background-color: #ffffff;
-    height: 3px;
+
+/*ProgressBar connectors*/
+#progressbar li:after {
+    content: '';
     width: 100%;
-    left: 0;
-    bottom: 20px;
-    transition: 0.3s;
-}
-
-//navbar light
-
-.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .show>.nav-link {
-    position: relative;
-}
-
-.navbar-light .navbar-nav .nav-link:before, .navbar-light .navbar-nav .show>.nav-link:before {
-    content: "";
+    height: 2px;
     position: absolute;
-    background-color: #055CAB;
-    height: 3px;
-    width: 0;
     left: 0;
-    bottom: 20px;
-    transition: 0.3s;
+    top: 25px;
+    z-index: -1;
+    border: 1px dashed lightgray;
 }
 
-.navbar-light .navbar-nav .nav-link:hover::before, .navbar-light .navbar-nav .show>.nav-link:hover::before {
-    width: 100%;
-}
-
-.navbar-light .navbar-nav .nav-link.active::before, .navbar-light .navbar-nav .show>.nav-link::before {
-    content: "";
+/*ProgressBar connectors*/
+#progressbar li:first-child:after {
+    content: '';
+    width: 50%;
+    height: 2px;
     position: absolute;
-    background-color: #055CAB;
-    height: 3px;
-    width: 100%;
-    left: 0;
-    bottom: 20px;
-    transition: 0.3s;
+    left: 50%;
+    top: 25px;
+    z-index: -1;
+}
+
+/*ProgressBar connectors*/
+#progressbar li:last-child:after {
+    content: '';
+    width: 50%;
+    height: 2px;
+    position: absolute;
+    left: 0%;
+    top: 25px;
+    z-index: -1;
+}
+
+/*Color number of the step and the connector before it*/
+#progressbar li.active:before {
+    background: #0A109A;
+}
+
+#progressbar li.active:after {
+    border: 1px dashed #0A109A;
+}
+
+/*Animated Progress Bar*/
+.progress {
+  height: 20px;
+}
+
+.progress-bar {
+  background-color: #0A109A;
 }
