@@ -39,6 +39,24 @@ footer.bg-dark {
     background-repeat: no-repeat;
     background-attachment: scroll !important;
   }
+  &.bg-contain {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll !important;
+  }
+  &.bg-50 {
+    background-size: 50%;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-attachment: scroll !important;
+  }
+  &.bg-top-left {
+    background-position: top left;
+  }
+  &.bg-top-right {
+    background-position: top right;
+  }
   &.bg-overlay:before {
     content: "";
     display: block;
@@ -80,6 +98,9 @@ footer.bg-dark {
 @media (max-width: 991.98px) {
   .image-wrapper.bg-full {
     background-size: cover !important;
+  }
+  .image-wrapper.bg-50 {
+    background-size: contain !important;
   }
 }
 @media (max-width: 767px) {

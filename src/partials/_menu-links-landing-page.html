@@ -1,0 +1,18 @@
+@@if (!context.centerLogo) {
+<ul class="navbar-nav">
+  }
+@@if (context.centerLogo) {
+  <div class="w-100 order-1 order-lg-0 d-lg-flex">
+    <ul class="navbar-nav ms-lg-auto">
+      }
+      <li class="nav-item"><a class="nav-link scroll active" href="#home">Beranda</a></li>
+      <li class="nav-item"><a class="nav-link scroll" href="#about">Tentang Kami</a></li>
+      @@if (context.centerLogo) {
+    </ul>
+    <!-- /.navbar-nav -->
+  </div>
+}
+@@if (!context.centerLogo) {
+</ul>
+<!-- /.navbar-nav -->
+}
