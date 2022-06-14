@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	@@include('_head.html')
+</head>
+<body>
+	<div class="content-wrapper">
+		<header class="wrapper bg-soft-primary">
+			@@include('_navbar.html', {
+				"classList": "center-nav navbar-light navbar-bg-light",
+				"logoLight": false,
+				"logoBoth": false,
+				"otherClassList": "navbar-other w-20 d-flex ms-3",
+				"otherBtn": true,
+				"otherBtnClassList": "btn-sm btn-primary rounded-pill",
+				"otherBtnText": "Login",
+				"otherBtnLink": "@@webRoot/auth/login.html"
+			})
+		</header>
+		<!-- /header -->
+        <!-- Banner Kabar Terbaru -->
+        <section class="wrapper image-wrapper bg-image bg-cover bg-top-left" data-image-src="@@webRoot/assets/img/photos/bg-kabar.svg">
+			<div class="container pt-0 pt-lg-10 pb-4 pb-lg-12">
+				<div class="row gx-lg-8 gx-xl-12 gy-10 mb-10 mb-md-17 align-items-center">
+					<div class="col-lg-6 order-lg-2">
+						<figure><img src="@@webRoot/assets/img/photos/img-kabar.svg" srcset="@@webRoot/assets/img/photos/img-kabar.svg 2x" alt=""></figure>
+					</div>
+					<!--/column -->
+					<div class="col-lg-6">
+						<h2 class="display-1 fs-50 mb-4 text-white animate__animated animate__slideInDown animate__delay-1s">Komunitas Yang Terus Berkembang</h2>
+                        <p class="lead fs-23 lh-sm mb-7 text-white animate__animated animate__slideInRight animate__delay-2s">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+					</div>
+					<!--/column -->
+				</div>
+				<!--/.row -->
+			</div>
+			<!-- /.container -->
+		</section>
+
+         <!-- Kabar Terbaru -->
+         <section class="wrapper">
+			<div class="container pt-0 pt-lg-10 pb-4 pb-lg-10">
+				<div class="row gx-lg-8 gx-xl-12 gy-10 mb-10 mb-md-17 align-items-center">
+					<div class="col-lg-6 order-lg-2">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, consequuntur? Corrupti quidem, est laboriosam quisquam incidunt animi vel impedit aspernatur? Repellat, harum. Neque expedita hic accusamus velit omnis magni porro.</p>
+					</div>
+					<!--/column -->
+					<div class="col-lg-6">
+						
+					</div>
+					<!--/column -->
+				</div>
+				<!--/.row -->
+			</div>
+			<!-- /.container -->
+		</section>
+       
+	</div>
+	<!-- /.content-wrapper -->
+	<footer class="bg-navy">
+		<div class="container pt-10 pb-5">
+			@@include('_footer.html')
+		</div>
+		<!-- /.container -->
+	</footer>
+	@@include('_page-progress.html')
+	@@include('_scripts.html')
+</body>
+</html>
