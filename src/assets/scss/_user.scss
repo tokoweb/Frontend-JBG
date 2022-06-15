@@ -308,6 +308,12 @@ blockquote.icon-top:before {
     border-bottom-left-radius: 20px !important;
 }
 
+// Blog Post
+.blog.single .tag-list li a:before {
+    content: "";
+    padding-right: 0px;
+}
+
 @media only screen and (max-width: 768px) {
     .img-kegiatan-1,
     .img-kegiatan-2 {
