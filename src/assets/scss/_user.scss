@@ -257,13 +257,26 @@ Navbar Hover & Active
 }
 
 // Homepage / Kegiatan Organisasi
-.img-kegiatan-1 {
-    height: 320px;
+.img-post {
+    height: 100%;
 }
-.img-kegiatan {
-    height: 257px;
+.img-kegiatan-1 {
+    height: 300px;
+}
+.img-kegiatan-2 {
+    height: 283px;
     border-radius: 0.4rem 0 0 0.4rem;
 }
 .konten-kegiatan {
     border-radius: 0 0.4rem 0.4rem 0;
+}
+@media only screen and (max-width: 768px) {
+    .img-kegiatan-1,
+    .img-kegiatan-2 {
+        height: auto;
+    }
+    .grid-post {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
