@@ -264,15 +264,35 @@ Navbar Hover & Active
     height: 300px;
 }
 .img-kegiatan-2 {
-    height: 283px;
     border-radius: 0.4rem 0 0 0.4rem;
+    height: 282px;
+    width: 426px;
 }
 .konten-kegiatan {
     border-radius: 0 0.4rem 0.4rem 0;
 }
+// Slider Teams Home
+.swiper-controls .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    transform: scale(2);
+    border-color: #0070b7;
+}
+.swiper-slide .card-body {
+    font-size: 14px;;
+}
+
+// Testimoni Team Home
+blockquote.icon-top:before {
+    content: "\201f";
+    color: #055CAB;
+    opacity: 1;
+    left: 0;
+    font-weight: bold;
+}
+
 @media only screen and (max-width: 768px) {
     .img-kegiatan-1,
     .img-kegiatan-2 {
+        width: 100%;
         height: auto;
     }
     .grid-post {
