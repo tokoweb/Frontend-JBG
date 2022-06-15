@@ -264,12 +264,12 @@ Navbar Hover & Active
     height: 300px;
 }
 .img-kegiatan-2 {
-    border-radius: 0.4rem 0 0 0.4rem;
+    border-radius: 20px 0 0 20px;
     height: 282px;
     width: 426px;
 }
 .konten-kegiatan {
-    border-radius: 0 0.4rem 0.4rem 0;
+    border-radius: 0 20px 20px 0;
 }
 // Slider Teams Home
 .swiper-controls .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -289,6 +289,25 @@ blockquote.icon-top:before {
     font-weight: bold;
 }
 
+.card-img, .card-img-top {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.card {
+    border-radius: 20px;
+}
+.rounded {
+    border-radius: 20px !important;
+}
+.rounded-top {
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+}
+.rounded-bottom {
+    border-bottom-right-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+}
+
 @media only screen and (max-width: 768px) {
     .img-kegiatan-1,
     .img-kegiatan-2 {
@@ -298,5 +317,13 @@ blockquote.icon-top:before {
     .grid-post {
         padding-left: 15px;
         padding-right: 15px;
+    }
+}
+
+// Navbar Header
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
     }
 }
