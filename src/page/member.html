@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	@@include('_head.html')
+</head>
+<body>
+	<div class="content-wrapper">
+		<header class="wrapper bg-soft-primary">
+			@@include('_navbar.html', {
+				"classList": "center-nav navbar-light navbar-bg-light",
+				"logoLight": false,
+				"logoBoth": false,
+				"otherClassList": "w-100 d-flex ms-auto",
+				"otherBtn": true,
+				"otherBtnClassList": "btn-sm btn-primary rounded-pill",
+				"otherBtnText": "Login",
+				"otherBtnLink": "@@webRoot/auth/login.html"
+			})
+		</header>
+		<!-- /header -->
+        <!-- Banner Member -->
+        <section class="wrapper image-wrapper bg-image bg-cover bg-top-left" data-image-src="@@webRoot/assets/img/photos/bg-member.svg">
+			<div class="container pb-4 pb-lg-10">
+				<div class="row gx-lg-8 gx-xl-12 gy-10 mb-10 mb-md-17 mt-2 align-items-center">
+					<div class="col-lg-6 order-lg-2 d-none d-sm-block">
+						<figure><img src="@@webRoot/assets/img/photos/img-kabar.svg" srcset="@@webRoot/assets/img/photos/img-kabar.svg 2x" alt=""></figure>
+					</div>
+					<!--/column -->
+					<div class="col-lg-6">
+						<h2 class="display-1 fs-50 mb-4 text-white animate__animated animate__slideInDown animate__delay-1s">Komunitas Yang Terus Berkembang</h2>
+                        <p class="lead lh-sm mb-7 text-white animate__animated animate__slideInRight animate__delay-2s">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+					</div>
+					<!--/column -->
+				</div>
+				<!--/.row -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /section -->
+        <!-- Form Cari Member -->
+        <section class="wrapper bg-light">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-11 col-md-12 col-lg-12 col-xl-10 mt-2 mt-n13 bg-light px-3 py-3 rounded-full shadow">
+                        <form class="contact-form needs-validation" method="post" action="@@webRoot/assets/php/contact.php" novalidate>
+							<div class="messages"></div>
+							<div class="row">
+                                <div class="col-md-5 col-lg-auto m-2 m-md-1 m-lg-auto">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <i class="input-group-text uil uil-location-point icon-form"></i>
+                                        </div>
+                                        <div class="form-select-wrapper">
+                                            <select class="form-select form-input" id="form-select" name="lokasi" required>
+                                                <option selected disabled value="">Semua Lokasi</option>
+                                                <option value="Sales">Bandung Raya Selatan</option>
+                                                <option value="Marketing">Jakarta</option>
+                                                <option value="Customer Support">Surabaya</option>
+                                            </select>
+                                            <div class="valid-feedback">
+                                                Looks good!
+                                            </div>
+                                            <div class="invalid-feedback">
+                                               Pilih Lokasi
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-lg-auto m-2 m-md-1 m-lg-auto">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <i class="input-group-text uil uil-building icon-form"></i>
+                                        </div>
+                                        <div class="form-select-wrapper">
+                                            <select class="form-select form-input" id="form-select" name="kantor" required>
+                                                <option selected disabled value="">Semua Kantor</option>
+                                                <option value="Sales">Bandung Raya Selatan</option>
+                                                <option value="Marketing">Jakarta</option>
+                                                <option value="Customer Support">Surabaya</option>
+                                            </select>
+                                            <div class="valid-feedback">
+                                                Looks good!
+                                            </div>
+                                            <div class="invalid-feedback">
+                                               Pilih Lokasi
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-lg-auto m-2 m-md-2 m-lg-auto">
+                                    <div class="form-floating">
+                                        <div class="input-group">
+                                            <span class="" id=""><i class="input-group-text uil uil-search icon-form"></i></span>
+                                            <input type="text" class="form-control form-input" placeholder="Nama Member" aria-label="Nama Member" aria-describedby="basic-addon1">
+                                          </div>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Masukan Nama Member
+                                        </div>
+                                    </div>
+                                </div>
+								<div class="col-12 col-lg-auto col-md-6 m-2 m-lg-2 m-md-2 pt-lg-1">
+									<input type="submit" class="btn btn-primary rounded-pill btn-send mb-3 px-10" value="Cari">
+								</div>
+								<!-- /column -->
+							</div>
+							<!-- /.row -->
+						</form>
+                    </div>
+                    <!--/column -->
+                </div>
+                <!--/.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /section -->
+
+		<!-- Member KSP -->
+		<section class="wrapper bg-light mb-10">
+			<div class="container my-4">
+				<div class="row p-3 p-lg-8">
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-8">
+                        <div class="card">
+                            <a href="#"><img class="card-img-top w-100" src="@@webRoot/assets/img/photos/about21@2x.jpg" srcset="@@webRoot/assets/img/photos/about21@2x.jpg 2x" alt=""/></a>
+                            <div class="card-body py-2 p-4">
+                                <h4 class="mt-2 mb-2"> Adam Maulana</h4>
+                                <div class="mb-1"><i class="uil uil-bag"></i> Customer Service Officer</div>
+                                <div class="mb-1"><i class="uil uil-home"></i> Bank BCA KCP Setiabudi, Bandung</div>
+                                <div class="mb-1"><i class="uil uil-clock"></i> Feb 2019 - Sekarang</div>
+
+                                <nav class="nav social mb-0">
+                                    <a href="#"><i class="uil uil-linkedin"></i></a>
+                                    <a href="#"><i class="uil uil-facebook"></i></a>
+                                    <a href="#"><i class="uil uil-instagram"></i></a>		
+                                </nav>
+                                <!-- /.social -->
+                            </div>
+                            <!--/.card-body -->
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                    <!-- /.column -->
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-8">
+                        <div class="card">
+                            <a href="#"><img class="card-img-top w-100" src="@@webRoot/assets/img/photos/about21@2x.jpg" srcset="@@webRoot/assets/img/photos/about21@2x.jpg 2x" alt=""/></a>
+                            <div class="card-body py-2 p-4">
+                                <h4 class="mt-2 mb-2"> Adam Maulana</h4>
+                                <div class="mb-1"><i class="uil uil-bag"></i> Customer Service Officer</div>
+                                <div class="mb-1"><i class="uil uil-home"></i> Bank BCA KCP Setiabudi, Bandung</div>
+                                <div class="mb-1"><i class="uil uil-clock"></i> Feb 2019 - Sekarang</div>
+
+                                <nav class="nav social mb-0">
+                                    <a href="#"><i class="uil uil-linkedin"></i></a>
+                                    <a href="#"><i class="uil uil-facebook"></i></a>
+                                    <a href="#"><i class="uil uil-instagram"></i></a>		
+                                </nav>
+                                <!-- /.social -->
+                            </div>
+                            <!--/.card-body -->
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                    <!-- /.column -->
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-8">
+                        <div class="card">
+                            <a href="#"><img class="card-img-top w-100" src="@@webRoot/assets/img/photos/about21@2x.jpg" srcset="@@webRoot/assets/img/photos/about21@2x.jpg 2x" alt=""/></a>
+                            <div class="card-body py-2 p-4">
+                                <h4 class="mt-2 mb-2"> Adam Maulana</h4>
+                                <div class="mb-1"><i class="uil uil-bag"></i> Customer Service Officer</div>
+                                <div class="mb-1"><i class="uil uil-home"></i> Bank BCA KCP Setiabudi, Bandung</div>
+                                <div class="mb-1"><i class="uil uil-clock"></i> Feb 2019 - Sekarang</div>
+
+                                <nav class="nav social mb-0">
+                                    <a href="#"><i class="uil uil-linkedin"></i></a>
+                                    <a href="#"><i class="uil uil-facebook"></i></a>
+                                    <a href="#"><i class="uil uil-instagram"></i></a>		
+                                </nav>
+                                <!-- /.social -->
+                            </div>
+                            <!--/.card-body -->
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                    <!-- /.column -->
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-8">
+                        <div class="card">
+                            <a href="#"><img class="card-img-top w-100" src="@@webRoot/assets/img/photos/about21@2x.jpg" srcset="@@webRoot/assets/img/photos/about21@2x.jpg 2x" alt=""/></a>
+                            <div class="card-body py-2 p-4">
+                                <h4 class="mt-2 mb-2"> Adam Maulana</h4>
+                                <div class="mb-1"><i class="uil uil-bag"></i> Customer Service Officer</div>
+                                <div class="mb-1"><i class="uil uil-home"></i> Bank BCA KCP Setiabudi, Bandung</div>
+                                <div class="mb-1"><i class="uil uil-clock"></i> Feb 2019 - Sekarang</div>
+
+                                <nav class="nav social mb-0">
+                                    <a href="#"><i class="uil uil-linkedin"></i></a>
+                                    <a href="#"><i class="uil uil-facebook"></i></a>
+                                    <a href="#"><i class="uil uil-instagram"></i></a>		
+                                </nav>
+                                <!-- /.social -->
+                            </div>
+                            <!--/.card-body -->
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                    <!-- /.column -->
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-8">
+                        <div class="card">
+                            <a href="#"><img class="card-img-top w-100" src="@@webRoot/assets/img/photos/about21@2x.jpg" srcset="@@webRoot/assets/img/photos/about21@2x.jpg 2x" alt=""/></a>
+                            <div class="card-body py-2 p-4">
+                                <h4 class="mt-2 mb-2"> Adam Maulana</h4>
+                                <div class="mb-1"><i class="uil uil-bag"></i> Customer Service Officer</div>
+                                <div class="mb-1"><i class="uil uil-home"></i> Bank BCA KCP Setiabudi, Bandung</div>
+                                <div class="mb-1"><i class="uil uil-clock"></i> Feb 2019 - Sekarang</div>
+
+                                <nav class="nav social mb-0">
+                                    <a href="#"><i class="uil uil-linkedin"></i></a>
+                                    <a href="#"><i class="uil uil-facebook"></i></a>
+                                    <a href="#"><i class="uil uil-instagram"></i></a>		
+                                </nav>
+                                <!-- /.social -->
+                            </div>
+                            <!--/.card-body -->
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                    <!-- /.column -->
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-8">
+                        <div class="card">
+                            <a href="#"><img class="card-img-top w-100" src="@@webRoot/assets/img/photos/about21@2x.jpg" srcset="@@webRoot/assets/img/photos/about21@2x.jpg 2x" alt=""/></a>
+                            <div class="card-body py-2 p-4">
+                                <h4 class="mt-2 mb-2"> Adam Maulana</h4>
+                                <div class="mb-1"><i class="uil uil-bag"></i> Customer Service Officer</div>
+                                <div class="mb-1"><i class="uil uil-home"></i> Bank BCA KCP Setiabudi, Bandung</div>
+                                <div class="mb-1"><i class="uil uil-clock"></i> Feb 2019 - Sekarang</div>
+
+                                <nav class="nav social mb-0">
+                                    <a href="#"><i class="uil uil-linkedin"></i></a>
+                                    <a href="#"><i class="uil uil-facebook"></i></a>
+                                    <a href="#"><i class="uil uil-instagram"></i></a>		
+                                </nav>
+                                <!-- /.social -->
+                            </div>
+                            <!--/.card-body -->
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                    <!-- /.column -->
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-8">
+                        <div class="card">
+                            <a href="#"><img class="card-img-top w-100" src="@@webRoot/assets/img/photos/about21@2x.jpg" srcset="@@webRoot/assets/img/photos/about21@2x.jpg 2x" alt=""/></a>
+                            <div class="card-body py-2 p-4">
+                                <h4 class="mt-2 mb-2"> Adam Maulana</h4>
+                                <div class="mb-1"><i class="uil uil-bag"></i> Customer Service Officer</div>
+                                <div class="mb-1"><i class="uil uil-home"></i> Bank BCA KCP Setiabudi, Bandung</div>
+                                <div class="mb-1"><i class="uil uil-clock"></i> Feb 2019 - Sekarang</div>
+
+                                <nav class="nav social mb-0">
+                                    <a href="#"><i class="uil uil-linkedin"></i></a>
+                                    <a href="#"><i class="uil uil-facebook"></i></a>
+                                    <a href="#"><i class="uil uil-instagram"></i></a>		
+                                </nav>
+                                <!-- /.social -->
+                            </div>
+                            <!--/.card-body -->
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                    <!-- /.column -->
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-8">
+                        <div class="card">
+                            <a href="#"><img class="card-img-top w-100" src="@@webRoot/assets/img/photos/about21@2x.jpg" srcset="@@webRoot/assets/img/photos/about21@2x.jpg 2x" alt=""/></a>
+                            <div class="card-body py-2 p-4">
+                                <h4 class="mt-2 mb-2"> Adam Maulana</h4>
+                                <div class="mb-1"><i class="uil uil-bag"></i> Customer Service Officer</div>
+                                <div class="mb-1"><i class="uil uil-home"></i> Bank BCA KCP Setiabudi, Bandung</div>
+                                <div class="mb-1"><i class="uil uil-clock"></i> Feb 2019 - Sekarang</div>
+
+                                <nav class="nav social mb-0">
+                                    <a href="#"><i class="uil uil-linkedin"></i></a>
+                                    <a href="#"><i class="uil uil-facebook"></i></a>
+                                    <a href="#"><i class="uil uil-instagram"></i></a>		
+                                </nav>
+                                <!-- /.social -->
+                            </div>
+                            <!--/.card-body -->
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                    <!-- /.column -->
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-8">
+                        <div class="card">
+                            <a href="#"><img class="card-img-top w-100" src="@@webRoot/assets/img/photos/about21@2x.jpg" srcset="@@webRoot/assets/img/photos/about21@2x.jpg 2x" alt=""/></a>
+                            <div class="card-body py-2 p-4">
+                                <h4 class="mt-2 mb-2"> Adam Maulana</h4>
+                                <div class="mb-1"><i class="uil uil-bag"></i> Customer Service Officer</div>
+                                <div class="mb-1"><i class="uil uil-home"></i> Bank BCA KCP Setiabudi, Bandung</div>
+                                <div class="mb-1"><i class="uil uil-clock"></i> Feb 2019 - Sekarang</div>
+
+                                <nav class="nav social mb-0">
+                                    <a href="#"><i class="uil uil-linkedin"></i></a>
+                                    <a href="#"><i class="uil uil-facebook"></i></a>
+                                    <a href="#"><i class="uil uil-instagram"></i></a>		
+                                </nav>
+                                <!-- /.social -->
+                            </div>
+                            <!--/.card-body -->
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                    <!-- /.column -->
+                 </div>
+				<!-- /.row -->
+				<div class="row d-flex justify-content-center">
+					<div class="col-4 d-flex justify-content-center">
+						<a href="#" class="btn btn-outline-dark rounded-pill">Muat Lebih Banyak</a>
+					</div>
+				</div>
+				<!--/.row -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /section -->
+	</div>
+	<!-- /.content-wrapper -->
+	<footer class="bg-navy">
+		<div class="container pt-10 pb-5">
+			@@include('_footer.html')
+		</div>
+		<!-- /.container -->
+	</footer>
+	@@include('_page-progress.html')
+	@@include('_scripts.html')
+</body>
+</html>
