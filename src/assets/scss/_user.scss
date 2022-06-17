@@ -339,6 +339,7 @@ blockquote.icon-top:before {
     border-radius: 50px !important;
 }
 
+// Tablet Responsive
 @media only screen and (max-width: 768px) {
     .img-kegiatan-1,
     .img-kegiatan-2 {
@@ -348,6 +349,21 @@ blockquote.icon-top:before {
     .grid-post {
         padding-left: 15px;
         padding-right: 15px;
+    }
+    .cari-member .btn-tampilkan .btn-komcab {
+        margin-top: 1em;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .cari-member .form-komite {
+        margin-top: 1em;
+    }
+    .cari-member .btn-tampilkan {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    .cari-member .btn-tampilkan .btn-komcab {
+        margin-top: auto;
     }
 }
 
