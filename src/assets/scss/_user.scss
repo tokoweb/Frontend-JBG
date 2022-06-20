@@ -276,7 +276,7 @@ Navbar Hover & Active
     transform: scale(2);
     border-color: #0070b7;
 }
-.swiper-slide .card-body {
+.member-terbaru .swiper-slide .card-body {
     font-size: 14px;;
 }
 
@@ -337,6 +337,12 @@ blockquote.icon-top:before {
 }
 .rounded-full {
     border-radius: 50px !important;
+}
+
+.swiper-container.nav-color .swiper-button, 
+.swiper-container.nav-color .swiper-slide figure .item-link {
+    background: rgba(63,120,224,.9)!important;
+    color: #fff!important;
 }
 
 // Tablet Responsive
