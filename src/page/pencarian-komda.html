@@ -18,25 +18,73 @@
 			})
 		</header>
 		<!-- /header -->
+        
         <!-- Banner Member -->
         <section class="wrapper image-wrapper bg-image bg-cover bg-top-left" data-image-src="@@webRoot/assets/img/photos/bg-member.svg">
-			<div class="container pb-4 pb-lg-12">
-				<div class="row gx-lg-8 gx-xl-12 gy-10 mb-10 mb-md-17 mt-2 align-items-center">
-					<div class="col-lg-6 order-lg-2 d-none d-sm-block">
-						<figure><img src="@@webRoot/assets/img/photos/img-kabar.svg" srcset="@@webRoot/assets/img/photos/img-kabar.svg 2x" alt=""></figure>
-					</div>
-					<!--/column -->
-					<div class="col-lg-6">
-						<h2 class="display-1 fs-45 mb-4 text-white animate__animated animate__slideInDown animate__delay-1s">Bidang Organisasi</h2>
+            <div class="container pb-4 pb-lg-12">
+                <div class="row gx-lg-8 gx-xl-12 gy-10 mb-10 mb-md-17 mt-2 align-items-center">
+                    <div class="col-lg-6 order-lg-2 d-none d-sm-block">
+                        <figure><img src="@@webRoot/assets/img/photos/img-kabar.svg" srcset="@@webRoot/assets/img/photos/img-kabar.svg 2x" alt=""></figure>
+                    </div>
+                    <!--/column -->
+                    <div class="col-lg-6">
+                        <h2 class="display-1 fs-45 mb-4 text-white animate__animated animate__slideInDown animate__delay-1s">Komite Daerah / Wilayah</h2>
                         <p class="lead lh-sm mb-7 text-white animate__animated animate__slideInRight animate__delay-2s">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
-					</div>
-					<!--/column -->
-				</div>
-				<!--/.row -->
-			</div>
-			<!-- /.container -->
-		</section>
-		<!-- /section -->
+                    </div>
+                    <!--/column -->
+                </div>
+                <!--/.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /section -->
+        
+         <!-- Form Cari Member -->
+         <section class="wrapper bg-light">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-11 col-md-10 col-lg-7 col-xl-5  mt-2 mt-n12 bg-light rounded-full shadow">
+                        <form class="contact-form needs-validation cari-member" method="#" action="#" novalidate>
+							<div class="messages"></div>
+							<div class="row mt-3  d-flex justify-content-center">
+                                <div class="col-md-7 col-lg-auto form-komite">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <i class="input-group-text uil uil-location-point icon-form"></i>
+                                        </div>
+                                        <div class="form-select-wrapper">
+                                            <select class="form-select form-input" id="form-select" name="lokasi" required>
+                                                <option selected disabled value="">Pilih Komite Daerah / Wilayah</option>
+                                                <option value="Sales">Jawa Tengah & D.I. Yogyakarta</option>
+                                                <option value="Marketing">Jakarta</option>
+                                                <option value="Customer Support">Surabaya</option>
+                                            </select>
+                                            <div class="valid-feedback">
+                                                Looks good!
+                                            </div>
+                                            <div class="invalid-feedback">
+                                               Pilih Lokasi
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+								<div class="col-12 col-md-4 col-lg-auto btn-tampilkan">
+									<input type="submit" class="btn btn-primary rounded-pill btn-send mb-3 px-10" value="Tampilkan">
+								</div>
+								<!-- /column -->
+							</div>
+							<!-- /.row -->
+						</form>
+                    </div>
+                    <!--/column -->
+                </div>
+                <!--/.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /section -->
+        
 		<!-- Member KSP -->
 		<section class="wrapper bg-light">
             <div class="overflow-hidden">
@@ -297,8 +345,8 @@
 			<div class="container">
 				<div class="row mb-3 align-items-center">
 					<div class="col-lg-12">
-						<h2 class="text-primary display-4 mb-1">Data Anggota Member</h2>
-                        <span class="text-dark">Sampai Juni 2022</span>
+						<h2 class="text-primary display-4 mb-1">Realisasi Program Kerja</h2>
+                        <span class="text-dark">Periode 2019 - 2022</span>
 						<div class="text-secondary divider mt-5 mb-4 w-17"></div>
 					</div>
 				</div>
@@ -314,161 +362,149 @@
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
                                             <div class="item-inner">
-                                                <div class="card">
-                                                    <a href="#">
-                                                        <img class="card-img-top w-100" src="@@webRoot/assets/img/photos/about21@2x.jpg" srcset="@@webRoot/assets/img/photos/about21@2x.jpg 2x" alt=""/>
-                                                    </a>
-                                                    <div class="card-body py-2 p-4">
-                                                        <h4 class="mt-2 mb-2"> Adam Maulana</h4>
-                                                        <div class="mb-1"><i class="uil uil-bag"></i> Customer Service Officer</div>
-                                                        <div class="mb-1"><i class="uil uil-home"></i> Bank BCA KCP Setiabudi, Bandung</div>
-                                                        <div class="mb-1"><i class="uil uil-clock"></i> Feb 2019 - Sekarang</div>
-        
-                                                        <nav class="nav social mb-0">
-                                                            <a href="#"><i class="uil uil-linkedin"></i></a>
-                                                            <a href="#"><i class="uil uil-facebook"></i></a>
-                                                            <a href="#"><i class="uil uil-instagram"></i></a>		
-                                                        </nav>
-                                                        <!-- /.social -->
+                                                <div class="card shadow">
+                                                    <img class="card-img-top w-100 img-post" src="@@webRoot/assets/img/photos/b7.jpg" srcset="@@webRoot/assets/img/photos/b7.jpg 2x" alt=""/>
+                                                    <div class="card-body py-3 px-4">
+                                                        <div class="my-1">Category</div>
+                                                        <h4 class="card-title mt-2 mb-2">Blog title heading will go</h4>
+                                                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                                        <!-- author blog -->
+                                                        <div class="row d-flex align-items-center my-4">
+                                                            <div class="col-3">
+                                                                <a href="#">
+                                                                    <img class="rounded-circle w-15 me-2 img-fluid"  src="@@webRoot/assets/img/avatars/te1.jpg" srcset="@@webRoot/assets/img/avatars/te1.jpg 2x" alt="">
+                                                                </a>
+                                                            </div>
+                                                            <div class="col-9">
+                                                                <h6>Ronald Richards</h6>
+                                                                <div class="date-blog">
+                                                                    <i class="uil uil-clock"></i> 11 Jan 2022
+                                                                    <i class="uil uil-eye px-2 pe-0"></i> 234 views
+                                                                </div>  
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <!--/.card-body -->
                                                 </div>
-                                                <!-- /.card -->
                                             </div>
                                             <!-- /.item-inner -->
                                         </div>
                                         <!--/.swiper-slide -->
                                         <div class="swiper-slide">
                                             <div class="item-inner">
-                                                <div class="card">
-                                                    <a href="#">
-                                                        <img class="card-img-top w-100" src="@@webRoot/assets/img/photos/about21@2x.jpg" srcset="@@webRoot/assets/img/photos/about21@2x.jpg 2x" alt=""/>
-                                                    </a>
-                                                    <div class="card-body py-2 p-4">
-                                                        <h4 class="mt-2 mb-2"> Adam Maulana</h4>
-                                                        <div class="mb-1"><i class="uil uil-bag"></i> Customer Service Officer</div>
-                                                        <div class="mb-1"><i class="uil uil-home"></i> Bank BCA KCP Setiabudi, Bandung</div>
-                                                        <div class="mb-1"><i class="uil uil-clock"></i> Feb 2019 - Sekarang</div>
-        
-                                                        <nav class="nav social mb-0">
-                                                            <a href="#"><i class="uil uil-linkedin"></i></a>
-                                                            <a href="#"><i class="uil uil-facebook"></i></a>
-                                                            <a href="#"><i class="uil uil-instagram"></i></a>		
-                                                        </nav>
-                                                        <!-- /.social -->
+                                                <div class="card shadow">
+                                                    <img class="card-img-top w-100 img-post" src="@@webRoot/assets/img/photos/b7.jpg" srcset="@@webRoot/assets/img/photos/b7.jpg 2x" alt=""/>
+                                                    <div class="card-body py-3 px-4">
+                                                        <div class="my-1">Category</div>
+                                                        <h4 class="card-title mt-2 mb-2">Blog title heading will go</h4>
+                                                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                                        <!-- author blog -->
+                                                        <div class="row d-flex align-items-center my-4">
+                                                            <div class="col-3">
+                                                                <a href="#">
+                                                                    <img class="rounded-circle w-15 me-2 img-fluid"  src="@@webRoot/assets/img/avatars/te1.jpg" srcset="@@webRoot/assets/img/avatars/te1.jpg 2x" alt="">
+                                                                </a>
+                                                            </div>
+                                                            <div class="col-9">
+                                                                <h6>Ronald Richards</h6>
+                                                                <div class="date-blog">
+                                                                    <i class="uil uil-clock"></i> 11 Jan 2022
+                                                                    <i class="uil uil-eye px-2 pe-0"></i> 234 views
+                                                                </div>  
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <!--/.card-body -->
                                                 </div>
-                                                <!-- /.card -->
                                             </div>
                                             <!-- /.item-inner -->
                                         </div>
                                         <!--/.swiper-slide -->
                                         <div class="swiper-slide">
                                             <div class="item-inner">
-                                                <div class="card">
-                                                    <a href="#">
-                                                        <img class="card-img-top w-100" src="@@webRoot/assets/img/photos/about21@2x.jpg" srcset="@@webRoot/assets/img/photos/about21@2x.jpg 2x" alt=""/>
-                                                    </a>
-                                                    <div class="card-body py-2 p-4">
-                                                        <h4 class="mt-2 mb-2"> Adam Maulana</h4>
-                                                        <div class="mb-1"><i class="uil uil-bag"></i> Customer Service Officer</div>
-                                                        <div class="mb-1"><i class="uil uil-home"></i> Bank BCA KCP Setiabudi, Bandung</div>
-                                                        <div class="mb-1"><i class="uil uil-clock"></i> Feb 2019 - Sekarang</div>
-        
-                                                        <nav class="nav social mb-0">
-                                                            <a href="#"><i class="uil uil-linkedin"></i></a>
-                                                            <a href="#"><i class="uil uil-facebook"></i></a>
-                                                            <a href="#"><i class="uil uil-instagram"></i></a>		
-                                                        </nav>
-                                                        <!-- /.social -->
+                                                <div class="card shadow">
+                                                    <img class="card-img-top w-100 img-post" src="@@webRoot/assets/img/photos/b7.jpg" srcset="@@webRoot/assets/img/photos/b7.jpg 2x" alt=""/>
+                                                    <div class="card-body py-3 px-4">
+                                                        <div class="my-1">Category</div>
+                                                        <h4 class="card-title mt-2 mb-2">Blog title heading will go</h4>
+                                                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                                        <!-- author blog -->
+                                                        <div class="row d-flex align-items-center my-4">
+                                                            <div class="col-3">
+                                                                <a href="#">
+                                                                    <img class="rounded-circle w-15 me-2 img-fluid"  src="@@webRoot/assets/img/avatars/te1.jpg" srcset="@@webRoot/assets/img/avatars/te1.jpg 2x" alt="">
+                                                                </a>
+                                                            </div>
+                                                            <div class="col-9">
+                                                                <h6>Ronald Richards</h6>
+                                                                <div class="date-blog">
+                                                                    <i class="uil uil-clock"></i> 11 Jan 2022
+                                                                    <i class="uil uil-eye px-2 pe-0"></i> 234 views
+                                                                </div>  
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <!--/.card-body -->
                                                 </div>
-                                                <!-- /.card -->
                                             </div>
                                             <!-- /.item-inner -->
                                         </div>
                                         <!--/.swiper-slide -->
                                         <div class="swiper-slide">
                                             <div class="item-inner">
-                                                <div class="card">
-                                                    <a href="#">
-                                                        <img class="card-img-top w-100" src="@@webRoot/assets/img/photos/about21@2x.jpg" srcset="@@webRoot/assets/img/photos/about21@2x.jpg 2x" alt=""/>
-                                                    </a>
-                                                    <div class="card-body py-2 p-4">
-                                                        <h4 class="mt-2 mb-2"> Adam Maulana</h4>
-                                                        <div class="mb-1"><i class="uil uil-bag"></i> Customer Service Officer</div>
-                                                        <div class="mb-1"><i class="uil uil-home"></i> Bank BCA KCP Setiabudi, Bandung</div>
-                                                        <div class="mb-1"><i class="uil uil-clock"></i> Feb 2019 - Sekarang</div>
-        
-                                                        <nav class="nav social mb-0">
-                                                            <a href="#"><i class="uil uil-linkedin"></i></a>
-                                                            <a href="#"><i class="uil uil-facebook"></i></a>
-                                                            <a href="#"><i class="uil uil-instagram"></i></a>		
-                                                        </nav>
-                                                        <!-- /.social -->
+                                                <div class="card shadow">
+                                                    <img class="card-img-top w-100 img-post" src="@@webRoot/assets/img/photos/b7.jpg" srcset="@@webRoot/assets/img/photos/b7.jpg 2x" alt=""/>
+                                                    <div class="card-body py-3 px-4">
+                                                        <div class="my-1">Category</div>
+                                                        <h4 class="card-title mt-2 mb-2">Blog title heading will go</h4>
+                                                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                                        <!-- author blog -->
+                                                        <div class="row d-flex align-items-center my-4">
+                                                            <div class="col-3">
+                                                                <a href="#">
+                                                                    <img class="rounded-circle w-15 me-2 img-fluid"  src="@@webRoot/assets/img/avatars/te1.jpg" srcset="@@webRoot/assets/img/avatars/te1.jpg 2x" alt="">
+                                                                </a>
+                                                            </div>
+                                                            <div class="col-9">
+                                                                <h6>Ronald Richards</h6>
+                                                                <div class="date-blog">
+                                                                    <i class="uil uil-clock"></i> 11 Jan 2022
+                                                                    <i class="uil uil-eye px-2 pe-0"></i> 234 views
+                                                                </div>  
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <!--/.card-body -->
                                                 </div>
-                                                <!-- /.card -->
                                             </div>
                                             <!-- /.item-inner -->
                                         </div>
                                         <!--/.swiper-slide -->
                                         <div class="swiper-slide">
                                             <div class="item-inner">
-                                                <div class="card">
-                                                    <a href="#">
-                                                        <img class="card-img-top w-100" src="@@webRoot/assets/img/photos/about21@2x.jpg" srcset="@@webRoot/assets/img/photos/about21@2x.jpg 2x" alt=""/>
-                                                    </a>
-                                                    <div class="card-body py-2 p-4">
-                                                        <h4 class="mt-2 mb-2"> Adam Maulana</h4>
-                                                        <div class="mb-1"><i class="uil uil-bag"></i> Customer Service Officer</div>
-                                                        <div class="mb-1"><i class="uil uil-home"></i> Bank BCA KCP Setiabudi, Bandung</div>
-                                                        <div class="mb-1"><i class="uil uil-clock"></i> Feb 2019 - Sekarang</div>
-        
-                                                        <nav class="nav social mb-0">
-                                                            <a href="#"><i class="uil uil-linkedin"></i></a>
-                                                            <a href="#"><i class="uil uil-facebook"></i></a>
-                                                            <a href="#"><i class="uil uil-instagram"></i></a>		
-                                                        </nav>
-                                                        <!-- /.social -->
+                                                <div class="card shadow">
+                                                    <img class="card-img-top w-100 img-post" src="@@webRoot/assets/img/photos/b7.jpg" srcset="@@webRoot/assets/img/photos/b7.jpg 2x" alt=""/>
+                                                    <div class="card-body py-3 px-4">
+                                                        <div class="my-1">Category</div>
+                                                        <h4 class="card-title mt-2 mb-2">Blog title heading will go</h4>
+                                                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                                        <!-- author blog -->
+                                                        <div class="row d-flex align-items-center my-4">
+                                                            <div class="col-3">
+                                                                <a href="#">
+                                                                    <img class="rounded-circle w-15 me-2 img-fluid"  src="@@webRoot/assets/img/avatars/te1.jpg" srcset="@@webRoot/assets/img/avatars/te1.jpg 2x" alt="">
+                                                                </a>
+                                                            </div>
+                                                            <div class="col-9">
+                                                                <h6>Ronald Richards</h6>
+                                                                <div class="date-blog">
+                                                                    <i class="uil uil-clock"></i> 11 Jan 2022
+                                                                    <i class="uil uil-eye px-2 pe-0"></i> 234 views
+                                                                </div>  
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <!--/.card-body -->
                                                 </div>
-                                                <!-- /.card -->
                                             </div>
                                             <!-- /.item-inner -->
                                         </div>
                                         <!--/.swiper-slide -->
-                                        <div class="swiper-slide">
-                                            <div class="item-inner">
-                                                <div class="card">
-                                                    <a href="#">
-                                                        <img class="card-img-top w-100" src="@@webRoot/assets/img/photos/about21@2x.jpg" srcset="@@webRoot/assets/img/photos/about21@2x.jpg 2x" alt=""/>
-                                                    </a>
-                                                    <div class="card-body py-2 p-4">
-                                                        <h4 class="mt-2 mb-2"> Adam Maulana</h4>
-                                                        <div class="mb-1"><i class="uil uil-bag"></i> Customer Service Officer</div>
-                                                        <div class="mb-1"><i class="uil uil-home"></i> Bank BCA KCP Setiabudi, Bandung</div>
-                                                        <div class="mb-1"><i class="uil uil-clock"></i> Feb 2019 - Sekarang</div>
-        
-                                                        <nav class="nav social mb-0">
-                                                            <a href="#"><i class="uil uil-linkedin"></i></a>
-                                                            <a href="#"><i class="uil uil-facebook"></i></a>
-                                                            <a href="#"><i class="uil uil-instagram"></i></a>		
-                                                        </nav>
-                                                        <!-- /.social -->
-                                                    </div>
-                                                    <!--/.card-body -->
-                                                </div>
-                                                <!-- /.card -->
-                                            </div>
-                                            <!-- /.item-inner -->
-                                        </div>
-                                        <!--/.swiper-slide -->
-                                        
                                     </div>
                                     <!--/.swiper-wrapper -->
                                 </div>

@@ -339,12 +339,18 @@ blockquote.icon-top:before {
     border-radius: 50px !important;
 }
 
+// Slider Carousel
 .swiper-container.nav-color .swiper-button, 
 .swiper-container.nav-color .swiper-slide figure .item-link {
-    background: rgba(63,120,224,.9)!important;
-    color: #fff!important;
+    background: transparent;
+    color: #333 !important;
+    border: 1px solid #333;
 }
+.swiper-controls .swiper-navigation .swiper-button:hover {
+    background: #055CAB;
+    color: #fff !important;
 
+}
 .slide-member .swiper-container.nav-bottom .swiper-navigation {
     justify-content: end;
 }
