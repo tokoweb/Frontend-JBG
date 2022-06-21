@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	@@include('_head.html')
+</head>
+<body>
+	<div class="content-wrapper">
+		<header class="wrapper bg-soft-primary">
+			@@include('_navbar.html', {
+				"classList": "center-nav navbar-light navbar-bg-light",
+				"logoLight": false,
+				"logoBoth": false,
+				"otherClassList": "w-100 d-flex ms-auto",
+				"otherBtn": true,
+				"otherBtnClassList": "btn-sm btn-primary rounded-pill",
+				"otherBtnText": "Login",
+				"otherBtnLink": "@@webRoot/auth/login.html"
+			})
+		</header>
+		<!-- /header -->
+
+		<section class="wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg-3 border border-gray py-5 bg-light">
+						@@include('_sidebar.html')
+					</div>
+					<div class="col-12 col-lg-9 bg-gray py-8 px-5">
+						<div class="card rounded-2">
+							<!-- Content -->
+							<div class="card-body" style="max-height: 700px;overflow-y: scroll;">
+								<div class="mb-8">
+									<h2>Kebijakan Privasi</h2>
+								</div>
+                                <h3>Untuk tujuan Kebijakan Privasi</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem iure ipsum ad deserunt provident laboriosam quam reiciendis iste quibusdam amet, maiores autem saepe dolore quas eveniet repellendus quis, impedit dolorum.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem iure ipsum ad deserunt provident laboriosam quam reiciendis iste quibusdam amet, maiores autem saepe dolore quas eveniet repellendus quis, impedit dolorum.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem iure ipsum ad deserunt provident laboriosam quam reiciendis iste quibusdam amet, maiores autem saepe dolore quas eveniet repellendus quis, impedit dolorum.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem iure ipsum ad deserunt provident laboriosam quam reiciendis iste quibusdam amet, maiores autem saepe dolore quas eveniet repellendus quis, impedit dolorum.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem iure ipsum ad deserunt provident laboriosam quam reiciendis iste quibusdam amet, maiores autem saepe dolore quas eveniet repellendus quis, impedit dolorum.</p>
+							</div>
+							<!-- End Content -->
+						</div>
+						<!-- /.card -->
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<!-- /.content-wrapper -->
+	<footer class="bg-navy">
+		<div class="container pt-10 pb-5">
+			@@include('_footer.html')
+		</div>
+		<!-- /.container -->
+	</footer>
+	@@include('_page-progress.html')
+	@@include('_scripts.html')
+</body>
+</html>
