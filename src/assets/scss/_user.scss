@@ -345,6 +345,10 @@ blockquote.icon-top:before {
     color: #fff!important;
 }
 
+.slide-member .swiper-container.nav-bottom .swiper-navigation {
+    justify-content: end;
+}
+
 // Tablet Responsive
 @media only screen and (max-width: 768px) {
     .img-kegiatan-1,
