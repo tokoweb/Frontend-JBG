@@ -46,7 +46,7 @@ Navbar Hover & Active
         position: absolute;
         background-color: #ffffff;
         height: 3px;
-        width: 100%;
+        width: 0px;
         left: 0;
         bottom: 20px;
         transition: 0.3s;
@@ -78,7 +78,7 @@ Navbar Hover & Active
         position: absolute;
         background-color: #055CAB;
         height: 3px;
-        width: 100%;
+        width: 0px;
         left: 0;
         bottom: 20px;
         transition: 0.3s;
@@ -254,4 +254,139 @@ Navbar Hover & Active
 
 .progress-bar {
   background-color: #0A109A;
+}
+
+// Homepage / Kegiatan Organisasi
+.img-post {
+    height: 100%;
+}
+.img-kegiatan-1 {
+    height: 300px;
+}
+.img-kegiatan-2 {
+    border-radius: 20px 0 0 20px;
+    height: 282px;
+    width: 426px;
+}
+.konten-kegiatan {
+    border-radius: 0 20px 20px 0;
+}
+// Slider Teams Home
+.swiper-controls .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    transform: scale(2);
+    border-color: #0070b7;
+}
+.member-terbaru .swiper-slide .card-body {
+    font-size: 14px;;
+}
+
+// Testimoni Team Home
+blockquote.icon-top:before {
+    content: "\201f";
+    color: #055CAB;
+    opacity: 1;
+    left: 0;
+    font-weight: bold;
+}
+
+.card-img, .card-img-top {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.card {
+    border-radius: 20px;
+}
+.rounded {
+    border-radius: 20px !important;
+}
+.rounded-top {
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+}
+.rounded-bottom {
+    border-bottom-right-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+}
+
+// Blog Post
+.blog.single .tag-list li a:before {
+    content: "";
+    padding-right: 0px;
+}
+
+// form Member
+.icon-form {
+    border-top: 1px;
+    border-left: 1px;
+    border-bottom: 1px;
+    border-radius: 1.4rem 0 0 1.4rem;
+    background-color: #edf1f4;
+    border-color: rgba(8,60,130,.07);
+    padding: 0.7rem 0 0.6rem 0.7rem;
+}
+.form-input {
+    background-color: #e9eef2;
+    border-left: 0;
+    border-radius: 0 1.4rem 1.4rem 0;
+    border-color: rgba(8,60,130,.07);
+    padding: 0.6rem 1.9rem 0.6rem 0.5rem;
+}
+.form-control.form-input:focus {
+    background-color: #edf1f4;
+    border-color: #f0f4f6;
+}
+.rounded-full {
+    border-radius: 50px !important;
+}
+
+// Slider Carousel
+.swiper-container.nav-color .swiper-button, 
+.swiper-container.nav-color .swiper-slide figure .item-link {
+    background: transparent;
+    color: #333 !important;
+    border: 1px solid #333;
+}
+.swiper-controls .swiper-navigation .swiper-button:hover {
+    background: #055CAB;
+    color: #fff !important;
+
+}
+.slide-member .swiper-container.nav-bottom .swiper-navigation {
+    justify-content: end;
+}
+
+// Tablet Responsive
+@media only screen and (max-width: 768px) {
+    .img-kegiatan-1,
+    .img-kegiatan-2 {
+        width: 100%;
+        height: auto;
+    }
+    .grid-post {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .cari-member .btn-tampilkan .btn-komcab {
+        margin-top: 1em;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .cari-member .form-komite {
+        margin-top: 1em;
+    }
+    .cari-member .btn-tampilkan {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    .cari-member .btn-tampilkan .btn-komcab {
+        margin-top: auto;
+    }
+}
+
+// Navbar Header
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
+    }
 }
