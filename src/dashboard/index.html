@@ -29,8 +29,108 @@
 						<div class="card rounded-2">
 							<!-- Content -->
 							<div class="card-body">
-								<div class="mb-4">
-									<h3>Profile</h3>
+								<div class="mb-8">
+                                    <div class="row">
+                                        <div class="col d-flex justify-content-start">
+                                            <h2>Profil Member</h2>
+                                        </div>
+                                    </div>
+								</div>
+								<div class="col-12 border border-gray rounded p-5 mt-5">
+									<form action="#" class="mt-4" enctype="multipart/form-data">
+										<div class="row gx-4 mb-4 align-items-center">
+											<div class="col-12 col-md-12 col-lg-4">
+												<div class="form-group mb-4">
+													<img class="rounded w-20" src="@@webRoot/assets/img/photos/about21@2x.jpg" srcset="@@webRoot/assets/img/photos/about21@2x.jpg 2x" alt=""/>
+												</div>
+											</div>
+											<div class="col-12 col-md-12 col-lg-8">
+												<div class="form-group mb-4">
+													<label class="mb-1" for="unit-kerja">Edit Foto Anda *</label>
+													<input type="file" class="form-control" id="foto" name="foto" required>
+												</div>
+											</div>
+										</div>
+										<div class="form-group mb-4">
+											<label class="mb-1" for="unit-kerja">Nama Lengkap *</label>
+											<input type="text" class="form-control" id="nama" name="nama" placeholder="Masukan Nama Anda" value="Andi" required>
+										</div>
+										<div class="form-group mb-4">
+											<label class="mb-1" for="kcu">Nomer Induk Pegawai *</label>
+											<input type="text" class="form-control" id="no" name="nomer-induk" placeholder="Input No Induk Pegawai" value="123456789" required>
+										</div>
+										<div class="form-group mb-4">
+											<label class="mb-1" for="tanggal-lahir">Tanggal Lahir *</label>
+											<input type="date" class="form-control" id="tanggal-lahir" required>
+										</div>
+										<div class="form-group mb-4">
+											<div>
+												<label class="mb-1" for="rt-rw" class="mb-2">Jenis Kelamin*</label>
+											</div>
+											<div class="form-check form-check-inline">
+												<input class="form-check-input" type="radio" name="jenis-kelamin" id="jenis-kelamin1" value="Laki-Laki" checked="checked"> 
+												<label class="form-check-label" for="jenis-kelamin">Laki-Laki</label>
+											</div>
+											<div class="form-check form-check-inline">
+												<input class="form-check-input" type="radio" name="jenis-kelamin" id="jenis-kelamin2" value="Perempuan"> 
+												<label class="form-check-label" for="jenis-kelami2">Perempuan</label>
+											</div>
+										</div>
+										<div class="form-group mb-4">
+											<label class="mb-1" for="komwil">KOMWIL *</label>
+											<input type="text" class="form-control" id="komwil" name="konwil" placeholder="KOMWIL" value="Bandung" required>
+										</div>
+										<div class="form-group mb-4">
+											<label class="mb-1" for="komwil">KOMCAB *</label>
+											<input type="text" class="form-control" id="komcab" name="koncab" placeholder="KOMCAB" value="Asia Afrika" required>
+										</div>
+										<div class="form-group mb-4">
+											<label class="mb-1" for="komwil">Email *</label>
+											<input type="email" class="form-control" id="email" name="konwil" placeholder="KOMWIL" value="member@komnas.com" required>
+										</div>
+										<div class="form-group mb-4">
+											<label class="mb-1" for="komwil">No Rekening *</label>
+											<input type="text" class="form-control" id="rekening" name="rekening" placeholder="No Rekening Bank" value="12121-13131-13" required>
+										</div>
+										<div class="form-group mb-4">
+											<label class="mb-1" for="komwil">No Telepon *</label>
+											<input type="text" class="form-control" id="telepon" name="telepon" placeholder="No Telepon / WhatsApp" value="089-668-202-432" required>
+										</div>
+										<div class="form-group mb-4">
+											<div>
+												<label for="rt-rw" class="mb-2">Usia Pensiun</label>
+											</div>
+											<div class="form-check form-check-inline">
+												<input class="form-check-input" type="radio" name="pensiun" id="pensiun1" value="35" checked="checked"> 
+												<label class="form-check-label" for="pensiun1">35</label>
+											</div>
+											<div class="form-check form-check-inline">
+												<input class="form-check-input" type="radio" name="jenis-kelamin" id="pensiun2" value="55"> 
+												<label class="form-check-label" for="pensiun2">55</label>
+											</div>
+										</div>
+										<hr class="bg-gray my-2"/>
+										<div class="form-group mb-4">
+											<i class="uil uil-linkedin fs-24 align-middle"></i> 
+											<label class="mb-1" for="komwil">LinkedIn</label>
+											<input type="text" class="form-control" id="LinkedIn" name="LinkedIn" placeholder="LinkedIn" value="@LinkedIn">
+										</div>
+										<div class="form-group mb-4">
+											<i class="uil uil-facebook fs-24 align-middle"></i>
+											<label class="mb-1" for="komwil">Facebook</label>
+											<input type="text" class="form-control" id="fb" name="fb" placeholder="Facebook" value="@facebook">
+										</div>
+										<div class="form-group mb-4">
+											<i class="uil uil-instagram fs-24 align-middle"></i>
+											<label class="mb-1" for="komwil">Instagram</label>
+											<input type="text" class="form-control" id="ig" name="ig" placeholder="Instagram" value="@instagram">
+										</div>
+										
+										<div class="col-12 d-flex justify-content-end mt-3">
+											<input type="submit" class="btn btn-primary rounded btn-send mb-3" value="Simpan">
+										</div>
+									</form>
+									<!-- /Form -->
 								</div>
 							</div>
 							<!-- End Content -->
