@@ -355,6 +355,11 @@ blockquote.icon-top:before {
     justify-content: end;
 }
 
+.nav-tabs.nav-pills .nav-link.active {
+    background-color: #055CAB !important;
+    color: #fff;
+}
+
 // Tablet Responsive
 @media only screen and (max-width: 768px) {
     .img-kegiatan-1,
