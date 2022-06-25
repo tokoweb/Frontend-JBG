@@ -360,6 +360,19 @@ blockquote.icon-top:before {
     color: #fff;
 }
 
+// Filter Bidang Komnas
+.filter-bidang.swiper-slide {
+    width: 100% !important;
+    height: 100%;
+    overflow: scroll;
+}
+.swiper-container .swiper .filter-bidang  img {
+    width: 50px;
+}
+.filter-bidang li.nav-item {
+    width: 265px;
+}
+
 // Tablet Responsive
 @media only screen and (max-width: 768px) {
     .img-kegiatan-1,
