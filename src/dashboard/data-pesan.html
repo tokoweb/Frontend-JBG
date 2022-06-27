@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	@@include('_head.html')
+</head>
+<body>
+	<div class="content-wrapper">
+		<header class="wrapper bg-soft-primary">
+			@@include('_navbar.html', {
+				"classList": "center-nav navbar-light navbar-bg-light",
+				"logoLight": false,
+				"logoBoth": false,
+				"otherClassList": "w-100 d-flex ms-auto",
+				"otherBtn": true,
+				"otherBtnClassList": "btn-sm btn-primary rounded-pill",
+				"otherBtnText": "Login",
+				"otherBtnLink": "@@webRoot/auth/login.html"
+			})
+		</header>
+		<!-- /header -->
+
+		<section class="wrapper">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12 col-lg-3 border border-gray py-5 bg-light">
+						@@include('_sidebar.html')
+					</div>
+					<div class="col-12 col-lg-9 bg-gray py-8 px-5">
+						<div class="card rounded-2">
+							<!-- Content -->
+							<div class="card-body">
+								<div class="mb-8">
+                                    <div class="row mb-5">
+                                        <div class="col d-flex justify-content-end">
+                                            <a href="@@webRoot/dashboard/tambah-pesan.html" class="btn btn-primary btn-sm text-light">
+                                                <i class="uil uil-comment-plus fs-24 me-1 align-middle"></i>
+                                                <span class="fs-16 align-middle">Buat Pesan</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col d-flex justify-content-start">
+                                            <h2>Pesan / Ticket Support</h2>
+                                        </div>
+                                    </div>
+								</div>
+                                <div class="col-12 my-4">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover">
+                                          <thead>
+                                            <tr class="text-center text-dark bg-gray">
+                                              <th scope="col">#</th>
+                                              <th scope="col">Subject</th>
+                                              <th scope="col">Status</th>
+                                              <th scope="col">Terakhir Update</th>
+                                              <th scope="col">Aksi</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody class="text-center">
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Ubah Profil Member</td>
+                                                <td><span class="badge bg-primary rounded-pill px-3 py-2">Open</span></td>
+                                                <td>22 Juni 2022 - 10:00 AM</td>
+                                                <td>
+                                                    <a href="#">
+                                                        <span class="badge bg-red rounded-pill px-3 mb-2">
+                                                            <i class="uil uil-x fs-24 me-1 align-middle"></i>Close
+                                                        </span>
+                                                    </a>
+                                                    <a href="@@webRoot/dashboard/balas-pesan.html">
+                                                        <span class="badge bg-primary rounded-pill">
+                                                            <i class="uil uil-edit fs-24 me-1 align-middle fs-24 me-1"></i>Balas
+                                                        </span>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Ubah Kata Sandi</td>
+                                                <td><span class="badge bg-primary rounded-pill px-3 py-2">Open</span></td>
+                                                <td>22 Juni 2022 - 10:00 AM</td>
+                                                <td>
+                                                    <a href="#" class="mb-2">
+                                                        <span class="badge bg-red rounded-pill px-3 mb-2">
+                                                            <i class="uil uil-x fs-24 me-1 align-middle"></i>Close
+                                                        </span>
+                                                    </a>
+                                                    <a href="@@webRoot/dashboard/balas-pesan.html">
+                                                        <span class="badge bg-primary rounded-pill">
+                                                            <i class="uil uil-edit fs-24 me-1 align-middle fs-24 me-1"></i>Balas
+                                                        </span>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>Ubah Kata Sandi</td>
+                                                <td><span class="badge bg-red rounded-pill px-3 py-2">Close</span></td>
+                                                <td>22 Juni 2022 - 10:00 AM</td>
+                                                <td>
+                                                    <!-- <a href="#">
+                                                        <span class="badge bg-red rounded-pill px-3">
+                                                            <i class="uil uil-x fs-24 me-1 align-middle"></i>Close
+                                                        </span>
+                                                    </a>
+                                                    <a href="@@webRoot/dashboard/balas-pesan.html">
+                                                        <span class="badge bg-primary rounded-pill">
+                                                            <i class="uil uil-edit fs-24 me-1 align-middle fs-24 me-1"></i>Balas
+                                                        </span>
+                                                    </a> -->
+                                                    -
+                                                </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                        <p class="text-red">Note : Bantu Integrasikan dengan plugin data table ya..</p>
+                                      </div>
+                                </div>
+							</div>
+							<!-- End Content -->
+						</div>
+						<!-- /.card -->
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<!-- /.content-wrapper -->
+	<footer class="bg-navy">
+		<div class="container pt-10 pb-5">
+			@@include('_footer.html')
+		</div>
+		<!-- /.container -->
+	</footer>
+	@@include('_page-progress.html')
+	@@include('_scripts.html')
+</body>
+</html>

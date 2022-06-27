@@ -23,7 +23,7 @@ var theme = {
     theme.lightbox();
     theme.plyr();
     theme.progressBar();
-    theme.loader();
+    // theme.loader();
     theme.pageProgress();
     theme.counterUp();
     theme.bsTooltips();
