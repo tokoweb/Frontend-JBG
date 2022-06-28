@@ -5,20 +5,23 @@ Navbar Hover & Active
 ========*/
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-nav .nav-link {
-    padding-left: 0px;
-    padding-right: 0px;
-    margin-left: 2rem;
-    margin-right: 2rem;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 }
 
 @media (min-width: 992px) {
+
     //navbar dark
-    .navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav .show>.nav-link {
+    .navbar-dark .navbar-nav .nav-link,
+    .navbar-dark .navbar-nav .show>.nav-link {
         position: relative;
     }
 
-    .navbar-dark .navbar-nav .nav-link:before, .navbar-dark .navbar-nav .show>.nav-link:before {
+    .navbar-dark .navbar-nav .nav-link:before,
+    .navbar-dark .navbar-nav .show>.nav-link:before {
         content: "";
         position: absolute;
         background-color: #ffffff;
@@ -29,19 +32,23 @@ Navbar Hover & Active
         transition: 0.3s;
     }
 
-    .navbar-dark .navbar-nav .nav-link:hover::before, .navbar-dark .navbar-nav .show>.nav-link:hover::before {
+    .navbar-dark .navbar-nav .nav-link:hover::before,
+    .navbar-dark .navbar-nav .show>.nav-link:hover::before {
         width: 100%;
     }
 
-    .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
+    .navbar-dark .navbar-nav .nav-link.active,
+    .navbar-dark .navbar-nav .show>.nav-link {
         color: #ffffff
     }
 
-    .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    .navbar-dark .navbar-nav .nav-link:focus,
+    .navbar-dark .navbar-nav .nav-link:hover {
         color: #ffffff;
     }
 
-    .navbar-dark .navbar-nav .nav-link.active::before, .navbar-dark .navbar-nav .show>.nav-link::before {
+    .navbar-dark .navbar-nav .nav-link.active::before,
+    .navbar-dark .navbar-nav .show>.nav-link::before {
         content: "";
         position: absolute;
         background-color: #ffffff;
@@ -54,11 +61,13 @@ Navbar Hover & Active
 
     //navbar light
 
-    .navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .show>.nav-link {
+    .navbar-light .navbar-nav .nav-link,
+    .navbar-light .navbar-nav .show>.nav-link {
         position: relative;
     }
 
-    .navbar-light .navbar-nav .nav-link:before, .navbar-light .navbar-nav .show>.nav-link:before {
+    .navbar-light .navbar-nav .nav-link:before,
+    .navbar-light .navbar-nav .show>.nav-link:before {
         content: "";
         position: absolute;
         background-color: #055CAB;
@@ -69,11 +78,25 @@ Navbar Hover & Active
         transition: 0.3s;
     }
 
-    .navbar-light .navbar-nav .nav-link:hover::before, .navbar-light .navbar-nav .show>.nav-link:hover::before {
+    .navbar-light .navbar-nav .dropdown-avatar .nav-link:before,
+    .navbar-light .navbar-nav .dropdown-avatar .show>.nav-link:before {
+        content: "";
+        position: absolute;
+        background-color: transparent;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: 20px;
+        transition: 0.3s;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover::before,
+    .navbar-light .navbar-nav .show>.nav-link:hover::before {
         width: 100%;
     }
 
-    .navbar-light .navbar-nav .nav-link.active::before, .navbar-light .navbar-nav .show>.nav-link::before {
+    .navbar-light .navbar-nav .nav-link.active::before,
+    .navbar-light .navbar-nav .show>.nav-link::before {
         content: "";
         position: absolute;
         background-color: #055CAB;
@@ -108,7 +131,7 @@ Navbar Hover & Active
 }
 
 .form-card {
-  text-align: left;
+    text-align: left;
 }
 
 /*Hide all except first fieldset*/
@@ -128,7 +151,8 @@ Navbar Hover & Active
     float: left;
 }
 
-#msform .action-button-previous:hover, #msform .action-button-previous:focus {
+#msform .action-button-previous:hover,
+#msform .action-button-previous:focus {
     background-color: #000000;
 }
 
@@ -141,7 +165,7 @@ Navbar Hover & Active
 
 /*Step Count*/
 .steps {
-  font-size: 25px;
+    font-size: 25px;
     color: gray;
     margin-bottom: 10px;
     font-weight: normal;
@@ -249,35 +273,41 @@ Navbar Hover & Active
 
 /*Animated Progress Bar*/
 .progress {
-  height: 20px;
+    height: 20px;
 }
 
 .progress-bar {
-  background-color: #0A109A;
+    background-color: #0A109A;
 }
 
 // Homepage / Kegiatan Organisasi
 .img-post {
     height: 100%;
 }
+
 .img-kegiatan-1 {
     height: 300px;
 }
+
 .img-kegiatan-2 {
     border-radius: 20px 0 0 20px;
     height: 282px;
     width: 426px;
 }
+
 .konten-kegiatan {
     border-radius: 0 20px 20px 0;
 }
+
 // Slider Teams Home
 .swiper-controls .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
     transform: scale(2);
     border-color: #0070b7;
 }
+
 .member-terbaru .swiper-slide .card-body {
-    font-size: 14px;;
+    font-size: 14px;
+    ;
 }
 
 // Testimoni Team Home
@@ -289,20 +319,25 @@ blockquote.icon-top:before {
     font-weight: bold;
 }
 
-.card-img, .card-img-top {
+.card-img,
+.card-img-top {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
+
 .card {
     border-radius: 20px;
 }
+
 .rounded {
     border-radius: 20px !important;
 }
+
 .rounded-top {
     border-top-left-radius: 20px !important;
     border-top-right-radius: 20px !important;
 }
+
 .rounded-bottom {
     border-bottom-right-radius: 20px !important;
     border-bottom-left-radius: 20px !important;
@@ -321,36 +356,41 @@ blockquote.icon-top:before {
     border-bottom: 1px;
     border-radius: 1.4rem 0 0 1.4rem;
     background-color: #edf1f4;
-    border-color: rgba(8,60,130,.07);
+    border-color: rgba(8, 60, 130, .07);
     padding: 0.7rem 0 0.6rem 0.7rem;
 }
+
 .form-input {
     background-color: #e9eef2;
     border-left: 0;
     border-radius: 0 1.4rem 1.4rem 0;
-    border-color: rgba(8,60,130,.07);
+    border-color: rgba(8, 60, 130, .07);
     padding: 0.6rem 1.9rem 0.6rem 0.5rem;
 }
+
 .form-control.form-input:focus {
     background-color: #edf1f4;
     border-color: #f0f4f6;
 }
+
 .rounded-full {
     border-radius: 50px !important;
 }
 
 // Slider Carousel
-.swiper-container.nav-color .swiper-button, 
+.swiper-container.nav-color .swiper-button,
 .swiper-container.nav-color .swiper-slide figure .item-link {
     background: transparent;
     color: #333 !important;
     border: 1px solid #333;
 }
+
 .swiper-controls .swiper-navigation .swiper-button:hover {
     background: #055CAB;
     color: #fff !important;
 
 }
+
 .slide-member .swiper-container.nav-bottom .swiper-navigation {
     justify-content: end;
 }
@@ -366,36 +406,44 @@ blockquote.icon-top:before {
     height: 100%;
     overflow: scroll;
 }
-.swiper-container .swiper .filter-bidang  img {
+
+.swiper-container .swiper .filter-bidang img {
     width: 50px;
 }
+
 .filter-bidang li.nav-item {
     width: 265px;
 }
 
 // Tablet Responsive
 @media only screen and (max-width: 768px) {
+
     .img-kegiatan-1,
     .img-kegiatan-2 {
         width: 100%;
         height: auto;
     }
+
     .grid-post {
         padding-left: 15px;
         padding-right: 15px;
     }
+
     .cari-member .btn-tampilkan .btn-komcab {
         margin-top: 1em;
     }
 }
+
 @media only screen and (max-width: 600px) {
     .cari-member .form-komite {
         margin-top: 1em;
     }
+
     .cari-member .btn-tampilkan {
         margin-top: 1em;
         margin-bottom: 1em;
     }
+
     .cari-member .btn-tampilkan .btn-komcab {
         margin-top: auto;
     }
@@ -406,5 +454,24 @@ blockquote.icon-top:before {
     .navbar-expand-lg .navbar-nav .nav-link {
         margin-left: 1.2rem;
         margin-right: 1.2rem;
+    }
+}
+
+//dropdown avatar
+
+.dropdown-avatar .dropdown-menu {
+    left: 50% !important;
+    transform: translateX(-60%) !important;
+    top: 100% !important;
+    margin-top: 0.5rem !important;
+    padding: 0.65rem 0;
+    position: absolute;
+    min-width: 4rem;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .dropdown-avatar .dropdown-menu {
+        transform: translateX(-70%) !important;
     }
 }
