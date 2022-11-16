@@ -1,11 +1,11 @@
 <nav class="navbar navbar-expand-lg @@classList">
   @@if (!context.fancy) {
-  <div class="container flex-lg-row flex-nowrap align-items-center">
+  <div class="container flex-lg-row flex-nowrap d-flex justify-content-end align-items-center">
     }
     @@if (context.fancy) {
     <div class="container">
       <div
-        class="navbar-collapse-wrapper bg-white d-flex flex-row flex-nowrap w-100 justify-content-between align-items-center">
+        class="navbar-collapse-wrapper bg-white d-flex flex-row flex-nowrap w-100 justify-content-end align-items-center">
         }
         <div class="navbar-brand w-100">
           <a href="@@webRoot/index.html">
@@ -24,8 +24,8 @@
               src="@@webRoot/assets/img/@@if(context.logoAlt){@@logoAlt}@@if(!context.logoAlt){logo}.png"
               srcset="@@webRoot/assets/img/@@if(context.logoAlt){@@logoAlt}@@if(!context.logoAlt){logo}@2x.png 2x"
               alt="" />
-            <img class="logo-light" src="@@webRoot/assets/img/logo-jbg.svg"
-              srcset="@@webRoot/assets/img/logo-jbg.svg 2x" alt="" />
+            <img class="logo-light" src="@@webRoot/assets/img/logo-jbg.svg" srcset="@@webRoot/assets/img/logo-jbg.svg 2x" alt="" style="
+            width: 160px;"/>
             }
           </a>
         </div>

@@ -14,14 +14,15 @@
 </head>
 
 <body>
-  <div class="content-wrapper">
+  <div class="content-wrapper wrapper-border">
     <header class="wrapper bg-soft-primary">
       <nav class="navbar navbar-expand-lg transparent position-absolute navbar-dark">
-        <div class="container flex-lg-row flex-nowrap align-items-center">
+        <div class="container flex-lg-row flex-nowrap d-flex justify-content-end align-items-center">
           <div class="navbar-brand w-100">
             <a href="./index.html">
               <img class="logo-dark" src="./assets/img/logo.png" srcset="./assets/img/logo@2x.png 2x" alt="" />
-              <img class="logo-light" src="./assets/img/logo-jbg.svg" srcset="./assets/img/logo-jbg.svg 2x" alt="" />
+              <img class="logo-light" src="./assets/img/logo-jbg.svg" srcset="./assets/img/logo-jbg.svg 2x" alt="" style="
+            width: 160px;" />
             </a>
           </div>
           <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
@@ -33,7 +34,7 @@
               <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link scroll active" href="./index.html">Beranda</a></li>
                 <li class="nav-item"><a class="nav-link scroll" href="./page/cek-resi.html">Lacak Paket</a></li>
-                <li class="nav-item"><a class="nav-link scroll" href="#">Cek Harga</a></li>
+                <li class="nav-item"><a class="nav-link scroll" href="./page/cek-tarif.html">Cek Tarif</a></li>
                 <li class="nav-item"><a class="nav-link scroll" href="./page/cek-jadwal.html">Cek Jadwal</a></li>
               </ul>
               <!-- /.navbar-nav -->
@@ -117,14 +118,13 @@
     <section class="wrapper bg-light">
       <div class="container">
         <div class="row d-flex justify-content-center">
-          <div class="col-11 col-md-12 col-lg-8 col-xl-6 bg-light mt-2 mt-n13 px-3 py-3 py-md-3 py-lg-5 py-xl-0 rounded shadow" style="z-index: 999">
+          <div class="col-11 col-md-12 col-lg-8 col-xl-6 bg-light mt-2 mt-n10 px-3 py-3 py-md-3 py-lg-5 py-xl-0 rounded shadow" style="z-index: 999">
             <form class="contact-form needs-validation" method="post" action="#" novalidate>
               <div class="messages"></div>
               <div class="row">
                 <div class="col-md-6 col-lg-6 m-2 m-md-2 m-lg-auto">
                   <div class="form-floating">
                     <div class="input-group">
-                      <span class="" id=""><i class="input-group-text uil uil-search icon-form"></i></span>
                       <input type="text" class="form-control form-input" placeholder="Masukan No Resi / Pengiriman" aria-label="No Resi" aria-describedby="basic-addon1">
                     </div>
                     <div class="valid-feedback"> Looks good! </div>
@@ -132,7 +132,7 @@
                   </div>
                 </div>
                 <div class="col-12 col-lg-auto col-md-6 m-2 m-lg-2 m-md-2 pt-lg-2">
-                  <input type="submit" class="btn btn-primary rounded-pill btn-send mb-3 px-10" value="Lacak Pengiriman">
+                  <input type="submit" class="btn btn-primary rounded btn-send mb-3 px-10" value="Lacak Pengiriman">
                 </div>
                 <!-- /column -->
               </div>
@@ -323,72 +323,67 @@
     <!-- /section -->
   </div>
   <!-- /.content-wrapper -->
-  <!-- <footer class="bg-dark text-inverse">
-		<div class="container py-13 py-md-15">
-			<div class="row gy-6 gy-lg-0">
-  <div class="col-lg-5">
-    <div class="widget">
-      <img src="./assets/img/logo-light.png" srcset="./assets/img/logo-light@2x.png 2x" alt="" />
-      <p class="text-white mt-3 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing pulvinar sit sed eu nulla risus quis amet.</p>
-      <nav class="nav social">
-        <a href="#" class="btn btn-circle btn-sm btn-white">
-          <i class="uil uil-facebook-f"></i>
-        </a>
-        <a href="#" class="btn btn-circle btn-sm btn-white">
-          <i class="uil uil-twitter"></i>
-        </a>
-        <a href="#" class="btn btn-circle btn-sm btn-white">
-          <i class="uil uil-instagram"></i>
-        </a>
-        <a href="#" class="btn btn-circle btn-sm btn-white">
-          <i class="uil uil-youtube"></i>
-        </a>
-      </nav>
+  <footer class="bg-light text-inverse shadow">
+    <div class="container pt-10 pb-0">
+      <div class="row gy-6 gy-lg-0">
+        <div class="col-lg-5">
+          <div class="widget">
+            <img src="./assets/img/logo-jbg.svg" srcset="./assets/img/logo-jbg.svg 2x" alt="" style="
+      width: 160px;" />
+            <p class="text-dark mt-3 mb-5">Solusi Pengiriman ikan dari Indonesia ke luar negeri Terpecaya</p>
+            <nav class="nav social">
+              <a href="#" class="btn btn-circle btn-sm btn-primary">
+                <i class="uil uil-facebook-f"></i>
+              </a>
+              <a href="#" class="btn btn-circle btn-sm btn-primary">
+                <i class="uil uil-twitter"></i>
+              </a>
+              <a href="#" class="btn btn-circle btn-sm btn-primary">
+                <i class="uil uil-instagram"></i>
+              </a>
+              <a href="#" class="btn btn-circle btn-sm btn-primary">
+                <i class="uil uil-youtube"></i>
+              </a>
+            </nav>
+          </div>
+          <!-- /.widget -->
+        </div>
+        <!-- /column -->
+        <div class="col-md-6 col-lg-3 offset-lg-1 pt-3 pt-lg-0">
+          <div class="widget">
+            <h4 class="widget-title text-primary mb-5 mb-lg-3">Menu Bantuan</h4>
+            <ul class="navbar-nav ms-lg-auto">
+              <li class="nav-item"><a class="nav-link py-2 text-dark" href="./index.html">Beranda</a></li>
+              <li class="nav-item"><a class="nav-link py-2 text-dark" href="./page/cek-resi.html">Lacak Paket</a></li>
+              <li class="nav-item"><a class="nav-link py-2 text-dark" href="./page/cek-tarif.html">Cek Tarif</a></li>
+              <li class="nav-item"><a class="nav-link py-2 text-dark" href="./page/cek-jadwal.html">Cek Jadwal</a></li>
+            </ul>
+          </div>
+          <!-- /.widget -->
+        </div>
+        <!-- /column -->
+        <div class="col-md-6 col-lg-3 pt-3 pt-lg-0">
+          <div class="widget">
+            <h4 class="widget-title text-primary mb-5 mb-lg-3">Informasi Kontak</h4>
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="tel:+62 812-9797-1227" class="text-dark"><i class="uil uil-phone"></i> +62 812-9797-1227</a>
+              </li>
+              <li>
+                <a href="mailto:jbgtranshipping@gmail.com" class="text-dark"><i class="uil uil-envelope"></i> jbgtranshipping@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.widget -->
+        </div>
+        <!-- /column -->
+        <p class="text-center text-dark py-5">Copyright 2022 © JBG Transhipping</p>
+      </div>
+      <!--/.row -->
+      <!-- /div -->
     </div>
-    <!-- /.widget -->
-  </div>
-  <!-- /column -->
-  <div class="col-md-6 col-lg-3 offset-lg-1 pt-3 pt-lg-0">
-    <div class="widget">
-      <h4 class="widget-title text-white mb-5 mb-lg-3">Alamat Kantor</h4>
-      <p class="text-white">Menara bidakara Lantai 1, Jl. Jendral Gatot Subroto Kav.71-73 Jakarta</p>
-    </div>
-    <!-- /.widget -->
-  </div>
-  <!-- /column -->
-  <div class="col-md-6 col-lg-3 pt-3 pt-lg-0">
-    <div class="widget">
-      <h4 class="widget-title text-white mb-5 mb-lg-3">Hubungi Kami</h4>
-      <ul class="list-unstyled mb-0">
-        <li>
-          <a href="#" class="text-white"><i class="uil uil-phone"></i> 021 83700809</a>
-        </li>
-        <li>
-          <a href="#" class="text-white"><i class="uil uil-envelope"></i> Komnas@spniba-bca.org</a>
-        </li>
-      </ul>
-    </div>
-    <!-- /.widget -->
-  </div>
-  <!-- /column -->
-  </div>
-  <!--/.row -->
-  <hr class="mt-13 mt-md-12 mb-4 bg-white" />
-  <div class="d-md-flex align-items-center justify-content-end">
-    <nav class="nav justify-content-center">
-      <li>
-        <a href="./page/syarat-ketentuan.html" class="text-white mx-4">Syarat dan Ketentuan</a>
-      </li>
-      <li>
-        <a href="./page/kebijakan-privasi.html" class="text-white">Kebijakan Privasi</a>
-      </li>
-    </nav>
-    <!-- /.social -->
-  </div>
-  <!-- /div -->
-  </div> -->
-  <!-- /.container -->
-  <!-- </footer> -->
+    <!-- /.container -->
+  </footer>
   <div class="progress-wrap">
     <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
       <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />

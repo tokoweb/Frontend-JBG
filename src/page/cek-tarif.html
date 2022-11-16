@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	@@include('_head.html')
+</head>
+<body>
+	<div class="content-wrapper wrapper-border">
+		<header class="wrapper bg-soft-primary">
+			@@include('_navbar.html', {
+				"classList": "transparent position-absolute navbar-dark",
+				"logoLight": true,
+				"logoBoth": true,
+				"otherClassList": "navbar-other w-100 d-flex ms-auto",
+				"otherBtn": false,
+				"otherBtnClassList": "btn-sm btn-primary rounded",
+				"otherBtnText": "",
+				"otherBtnLink": ""
+			  })
+		</header>
+		<!-- /header -->
+		<!-- Banner Home -->
+		<section class="wrapper bg-dark">
+			<div class="swiper-container swiper-hero dots-over bg-image" data-image-src="@@webRoot/assets/img/kurir-tarif.svg" data-margin="0" data-autoplay="true" data-autoplaytime="5000" data-nav="true" data-dots="true" data-items="1">
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide py-10 py-md-30">
+							<div class="container h-100">
+								<div class="row h-100">
+									<div class="col-12 col-md-6 text-lg-start justify-content-center align-self-center align-items-start">
+										<h2 class="display-1 fs-40 mb-4 text-white animate__animated animate__slideInDown animate__delay-1s">Cek Tarif Pengiriman Paket Anda di JBG Transhipping</h2>
+										<p class="lead fs-15 lh-sm mb-7 text-white animate__animated animate__slideInRight animate__delay-2s">Anda bisa dengan mudah melakukan pengecekan tarif pengiriman langsung di aplikasi atau website dengan cara pilih Negara Asal & Tujuan Negara</p>
+										<div class="animate__animated animate__slideInUp animate__delay-3s">
+											<div class="row">
+												<div class="col-4">
+													<a href="#" class="">
+														<img src="@@webRoot/assets/img/google-play.svg" srcset="@@webRoot/assets/img/google-play.svg 2x" alt="" />
+													</a>
+												</div>
+												<div class="col-4">
+													<a href="#" class="">
+														<img src="@@webRoot/assets/img/app-store.svg" srcset="@@webRoot/assets/img/app-store.svg 2x" alt="" />
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--/column -->
+								</div>
+								<!--/.row -->
+							</div>
+							<!--/.container -->
+						</div>
+						<!--/.swiper-slide -->
+					</div>
+					<!--/.swiper-wrapper -->
+				</div>
+				<!-- /.swiper -->
+			</div>
+			<!-- /.swiper-container -->
+		</section>
+		 <!-- /section -->
+		 <!-- Form Cari Member -->
+		 <section class="wrapper bg-light">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-7 bg-light mt-n11 px-7 pt-4 pb-5 rounded shadow" style="z-index: 999">
+                        <form class="contact-form needs-validation" method="post" action="#" novalidate>
+							<div class="messages"></div>
+							<div class="row">
+                                <div class="col-8">
+                                    <div class="row">
+                                        <div class="col">
+                                            <p class="text-primary mb-2">Negara Asal</p>
+                                            <div class="input-group">
+                                                <div class="form-select-wrapper">
+                                                    <select class="form-select form-input" id="form-select" name="lokasi" required>
+                                                        <option selected disabled value="">Pilih Negara Asal</option>
+                                                        <option value="#">Indonesia</option>
+                                                        <option value="#">Malaysia</option>
+                                                        <option value="#">Singapura</option>
+                                                    </select>
+                                                    <div class="valid-feedback">
+                                                        Looks good!
+                                                    </div>
+                                                    <div class="invalid-feedback">
+                                                       Pilih Negara
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <p class="text-primary mb-2">Tujuan</p>
+                                            <div class="input-group">
+                                                <div class="form-select-wrapper">
+                                                    <select class="form-select form-input" id="form-select" name="lokasi" required>
+                                                        <option selected disabled value="">Pilih Negara Tujuan</option>
+                                                        <option value="#">Fikri</option>
+                                                        <option value="#">Iman Maulana</option>
+                                                        <option value="#">Nikko Saputra</option>
+                                                    </select>
+                                                    <div class="valid-feedback">
+                                                        Looks good!
+                                                    </div>
+                                                    <div class="invalid-feedback">
+                                                       Pilih Negara
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+								<div class="col-4 d-flex justify-content-center align-items-end">
+									<input type="submit" class="btn btn-primary rounded btn-send px-10" value="Cek Tarif">
+								</div>
+								<!-- /column -->
+							</div>
+							<!-- /.row -->
+						</form>
+                    </div>
+                    <!--/column -->
+                </div>
+                <!--/.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /section -->
+		 <!-- Hasil Cek Tarif -->
+		 <section class="wrapper mb-15 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 pt-12 pb-8  bg-light">
+						<h2 class="display-4 mb-3">Hasil Cek Tarif Pengiriman</h2>
+                        <div class="text-primary divider w-15"></div>
+                    </div>
+                    <!--/column -->
+                </div>
+                <!--/.row -->
+            </div>
+            <!-- /.container -->
+			<div class="container">
+				<!-- Data Jadwal Pengiriman -->
+				<div class="row">
+                    <div class="col-12">
+                        <h5 class="text-uppercase mb-3 text-primary d-flex justify-content-end">Indonesia - Malaysia</h5>
+						<div class="card">
+							<div class="card-body">
+							  <div class="table-responsive">
+								<table class="table table-hover">
+								  <thead>
+									<tr class="text-primary">
+									  	<th scope="col">Tipe Kemasan</th>
+									 	<th scope="col">Ukuran</th>
+                                        <th scope="col">Dimensi</th>
+                                        <th scope="col">Biaya</th>
+									</tr>
+								  </thead>
+								  <tbody>
+									<tr>
+									  <th scope="row">PER FISH</th>
+									  <td>Small</td>
+									  <td>Bag size 9 x 20CM</td>
+									  <td>Rp.50.000</td>
+									</tr>
+                                    <tr>
+                                        <th scope="row">PER FISH</th>
+                                        <td>Small</td>
+                                        <td>Bag size 9 x 20CM</td>
+                                        <td>Rp.50.000</td>
+                                      </tr>
+                                    <tr>
+                                        <th scope="row">PER FISH</th>
+                                        <td>Small</td>
+                                        <td>Bag size 9 x 20CM</td>
+                                        <td>Rp.50.000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">PER FISH</th>
+                                        <td>Small</td>
+                                        <td>Bag size 9 x 20CM</td>
+                                        <td>Rp.50.000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">PER FISH</th>
+                                        <td>Small</td>
+                                        <td>Bag size 9 x 20CM</td>
+                                        <td>Rp.50.000</td>
+                                    </tr>
+								  </tbody>
+								</table>
+							  </div>
+							</div>
+							<!--/.card-body -->
+						  </div>
+                    </div>
+                </div>
+                <!--/.row -->
+				<!--/.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /section -->
+	</div>
+
+	<!-- /.content-wrapper -->
+    <footer class="bg-light text-inverse shadow">
+		<div class="container pt-10 pb-0">
+			@@include('_footer.html')
+		</div>
+		<!-- /.container -->
+	</footer>
+
+	@@include('_page-progress.html')
+	@@include('_scripts.html')
+</body>
+</html>

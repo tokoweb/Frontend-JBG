@@ -4,7 +4,7 @@
 	@@include('_head.html')
 </head>
 <body>
-	<div class="content-wrapper">
+	<div class="content-wrapper wrapper-border">
 		<header class="wrapper bg-soft-primary">
 			@@include('_navbar.html', {
 				"classList": "transparent position-absolute navbar-dark",
@@ -63,14 +63,13 @@
 		 <section class="wrapper bg-light">
             <div class="container">
                 <div class="row d-flex justify-content-center">
-                    <div class="col-11 col-md-12 col-lg-8 col-xl-6 bg-light mt-2 mt-n13 px-3 py-3 py-md-3 py-lg-5 py-xl-0 rounded shadow" style="z-index: 999">
+                    <div class="col-11 col-md-12 col-lg-8 col-xl-6 bg-light mt-2 mt-n10 px-3 py-3 py-md-3 py-lg-5 py-xl-0 rounded shadow" style="z-index: 999">
                         <form class="contact-form needs-validation" method="post" action="#" novalidate>
 							<div class="messages"></div>
 							<div class="row">
                                 <div class="col-md-6 col-lg-6 m-2 m-md-2 m-lg-auto">
                                     <div class="form-floating">
                                         <div class="input-group">
-                                            <span class="" id=""><i class="input-group-text uil uil-search icon-form"></i></span>
                                             <input type="text" class="form-control form-input" placeholder="Masukan No Resi / Pengiriman" aria-label="No Resi" aria-describedby="basic-addon1">
                                           </div>
                                         <div class="valid-feedback">
@@ -82,7 +81,7 @@
                                     </div>
                                 </div>
 								<div class="col-12 col-lg-auto col-md-6 m-2 m-lg-2 m-md-2 pt-lg-2">
-									<input type="submit" class="btn btn-primary rounded-pill btn-send mb-3 px-10" value="Lacak Pengiriman">
+									<input type="submit" class="btn btn-primary rounded btn-send mb-3 px-10" value="Lacak Pengiriman">
 								</div>
 								<!-- /column -->
 							</div>
@@ -274,12 +273,12 @@
 	</div>
 
 	<!-- /.content-wrapper -->
-	<!-- <footer class="bg-dark text-inverse">
-		<div class="container py-13 py-md-15">
+	<footer class="bg-light text-inverse shadow">
+		<div class="container pt-10 pb-0">
 			@@include('_footer.html')
-		</div> -->
+		</div>
 		<!-- /.container -->
-	<!-- </footer> -->
+	</footer>
 	@@include('_page-progress.html')
 	@@include('_scripts.html')
 </body>
