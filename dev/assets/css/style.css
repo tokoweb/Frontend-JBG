@@ -37252,7 +37252,7 @@ Navbar Hover & Active
   .navbar-dark .navbar-nav .show>.nav-link:before {
     content: "";
     position: absolute;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     height: 3px;
     width: 0;
     left: 0;
