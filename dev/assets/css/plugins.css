@@ -6385,6 +6385,21 @@ pre[class*="language-"] {
   position: relative;
   transition-property: transform
 }
+.swiper-testi .swiper-slide {
+  display: flex;
+  height: auto;
+}
+.swiper-testi .card  {
+  height: 100% !important;
+}
+.swiper-testi .card-body  {
+  display: flex;
+}
+.swiper-testi blockquote  {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
 .swiper-slide-invisible-blank {
   visibility: hidden
 }
